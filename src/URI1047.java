@@ -7,36 +7,32 @@ public class URI1047 {
 
 		Scanner sc = new Scanner(System.in);
 
-		int horaInicio, minutoInicio, horaFinal, minutoFinal, duracao;
+		int horaInicial, minutoInicial, horaFinal, minutoFinal, inicio, fim, duracao, duracaoHoras, duracaoMinutos; 
 
-		horaInicio = sc.nextInt();
-		minutoInicio = sc.nextInt();
+		horaInicial = sc.nextInt();
+		minutoInicial = sc.nextInt();
 		horaFinal = sc.nextInt();
 		minutoFinal = sc.nextInt();
+		
+		inicio = horaInicial * 60 + minutoInicial;
+		fim = horaFinal * 60 + minutoFinal;		
+		
+		if (inicio < fim) {
 
-		if (horaInicio < horaFinal) {
-
-			duracao = horaFinal - horaInicio;
+			duracao = fim - inicio;
 
 		}
 
 		else {
 
-			duracao = 24 - horaInicio + horaFinal;
+			duracao = (24 * 60 - inicio) + fim;
 
 		}
 		
-		if (horaInicio < horaFinal) {
-
-			duracao = minutoFinal - minutoInicio;
-
-		}
-
-		else {
-
-			duracao = 60 - horaInicio + horaFinal;
-
-		}
+		duracaoHoras = duracao / 60;
+		duracaoMinutos = duracao % 60;
+		
+		System.out.println("O JOGO DUROU " + duracaoHoras + " HORA(S) E "  + duracaoMinutos + " MINUTO(S)");
 
 		sc.close();
 
