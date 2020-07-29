@@ -79,8 +79,7 @@ public class URI1042 {
 
 		System.out.println(a);
 		System.out.println(b);
-		System.out.println(c);
-		System.out.println("\n");
+		System.out.println(c + "\n");
 		System.out.println(n1);
 		System.out.println(n2);
 		System.out.println(n3);
