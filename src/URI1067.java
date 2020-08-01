@@ -10,7 +10,8 @@ public class URI1067 {
 		int n, impar;
 
 		n = sc.nextInt();
-
+		
+		//Resposta da internet
 		System.out.print(1 + "\n");
 
 		for (int i = 1; i < n - 1; i += 2) {
@@ -19,9 +20,16 @@ public class URI1067 {
 
 			System.out.print(impar + "\n");
 
-			sc.close();
-
 		}
-
+		
+		//Resposta do intrutor
+		/*for (int i=1; i<=x; i++) {
+			if (i % 2 != 0) {
+				System.out.println(i);
+			}
+		}*/
+		
+		
+		sc.close();
 	}
 }
