@@ -2,7 +2,8 @@ import java.util.Scanner;
 import java.util.Locale;
 
 public class URI1002 {
-
+	
+	//Teste commit
 	public static void main(String[] args) {
 		//Exercício URI 1002
 		Scanner sc = new Scanner(System.in);
