@@ -4,6 +4,7 @@ import java.util.Locale;
 public class URI1002 {
 	
 	//Teste commit versao 2
+	//Teste commit outro dev
 	public static void main(String[] args) {
 		//Exercício URI 1002
 		Scanner sc = new Scanner(System.in);
